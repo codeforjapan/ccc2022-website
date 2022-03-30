@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   const siteName = 'Civictech Challenge Cup 2022'
   const description = '' // @TODO
   const baseUrl = 'https://ccc2022.code4japan.org'
-  const ogp = `${baseUrl}/ogp.png`
+  const ogp = `${baseUrl}/ogp.png` // @TODO replace new logo
 
   // const router = useRouter()
 
