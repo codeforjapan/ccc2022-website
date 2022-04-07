@@ -3,7 +3,7 @@ import { Twitter } from '@icon-park/react'
 
 const AppShare = () => {
   return (
-    <Flex justifyContent={'center'} alignItems={'center'} pb={'10px'}>
+    <Flex justifyContent={'center'} alignItems={'center'} pt={8} pb={'10px'}>
       <IconButton
         aria-label="Twitter Link"
         backgroundColor={'#1DA1F2'}
