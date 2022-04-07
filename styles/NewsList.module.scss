@@ -1,0 +1,40 @@
+$indigo-1: #170f7b;
+
+$font-ja: 'Noto Sans JP', sans-serif;
+$font-en: 'Spartan', sans-serif;
+
+.NewsList {
+  &Item {
+    font-family: $font-ja;
+
+    h3 {
+      font-family: $font-ja;
+      font-size: 1.5rem; // 24px;
+      font-weight: 900;
+      letter-spacing: normal;
+      color: $indigo-1;
+    }
+
+    a {
+      color: $indigo-1;
+      text-decoration: underline;
+      display: block;
+      text-align: center;
+    }
+  }
+
+  &NoItems {
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 1;
+    text-align: center;
+    color: #a8a8a8;
+
+    /* テキストを選択不能にする */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+}

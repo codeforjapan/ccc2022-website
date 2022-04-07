@@ -2,29 +2,30 @@ import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import { ChakraProvider } from '@chakra-ui/react'
-// import { useEffect } from 'react'
-// import { useRouter } from 'next/router'
+import { useEffect } from 'react'
+import { useRouter } from 'next/router'
 
 import theme from '@/theme'
+import { GOOGLE_ANALYTICS_ID, pageview } from '@/lib/gtag'
 
 function MyApp({ Component, pageProps }: AppProps) {
   const siteName = 'Civictech Challenge Cup 2022'
-  const description = '' // @TODO
+  const description =
+    '半径3mの野望から、未来は生まれる。 - 仲間とともにカタチにしよう'
   const baseUrl = 'https://ccc2022.code4japan.org'
-  const ogp = `${baseUrl}/ogp.png` // @TODO replace new logo
+  const ogp = `${baseUrl}/ogp.png`
 
-  // const router = useRouter()
+  const router = useRouter()
 
-  // @TODO implement later
-  // useEffect(() => {
-  //   if (!gtag.GOOGLE_ANALYTICS_ID) return
+  useEffect(() => {
+    if (!GOOGLE_ANALYTICS_ID) return
 
-  //   const handleRouteChange = (path: string) => gtag.pageview(path)
-  //   const TYPE = 'routeChangeComplete'
+    const handleRouteChange = (path: string) => pageview(path)
+    const TYPE = 'routeChangeComplete'
 
-  //   router.events.on(TYPE, handleRouteChange)
-  //   return () => router.events.off(TYPE, handleRouteChange)
-  // }, [router.events])
+    router.events.on(TYPE, handleRouteChange)
+    return () => router.events.off(TYPE, handleRouteChange)
+  }, [router.events])
 
   return (
     <ChakraProvider theme={theme}>
