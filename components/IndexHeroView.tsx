@@ -21,6 +21,7 @@ const IndexHeroView = (props: Props) => {
     return (
       <Text
         as="span"
+        d="inline-block"
         whiteSpace="nowrap"
         fontSize={
           smallerTitle ? 'max(16px, calc((80vw - 60px) / 10))' : undefined
