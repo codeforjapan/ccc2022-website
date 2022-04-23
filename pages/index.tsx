@@ -20,6 +20,7 @@ import IndexSponsors from '@/components/IndexSponsors'
 import AppFooter from '@/components/AppFooter'
 import AppInquiry from '@/components/AppInquiry'
 import AppShare from '@/components/AppShare'
+import IndexLinkTo2022 from '@/components/AppButtonApplicationForm'
 
 const IndexPage: NextPage = (/* { contents, fallbackEnabled }: Props */) => {
   const pageTitle = 'Civictech Challenge Cup 2022'
@@ -35,6 +36,7 @@ const IndexPage: NextPage = (/* { contents, fallbackEnabled }: Props */) => {
       </Head>
       <IndexHeroView showApplicationButton={true} />
       <AppShare />
+      <IndexLinkTo2022 />
       <IndexLinkToPast />
       <IndexNewsList newsItems={newsItems} />
       <IndexExaminationCriteria />
@@ -46,6 +48,7 @@ const IndexPage: NextPage = (/* { contents, fallbackEnabled }: Props */) => {
       <IndexCollaborators showComingSoon showAndMore={false} />
       {/* <IndexPersonalSponsors /> */}
       <IndexOrganizer />
+      <IndexLinkTo2022 />
       <AppInquiry />
       <AppFooter />
     </Box>
