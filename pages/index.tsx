@@ -25,7 +25,20 @@ import IndexLinkTo2022 from '@/components/AppButtonApplicationForm'
 const IndexPage: NextPage = (/* { contents, fallbackEnabled }: Props */) => {
   const pageTitle = 'Civictech Challenge Cup 2022'
 
-  const newsItems: NewsItem[] = []
+  const newsItems: NewsItem[] = [
+    {
+      "date": "2022/04/23",
+      "title": "Civictech Challenge Cup U-22 開会式が6月4日（土）に開催決定！",
+      "summary": "2022年6月4日（土）、エントリーした方全員に向けた開会式を開催します。 エントリーされた方は日程のご確認をお願いします。・時間：10:00 - 14:00（お昼休憩あり） ・場所：オンライン",
+      "thumbnail": {
+        "name": "",
+        "url": "",
+        "rawUrl": "",
+      },
+      "link": "",
+      "isDraft": false,
+    },
+  ]
 
   return (
     <Box className={styles.Index}>
