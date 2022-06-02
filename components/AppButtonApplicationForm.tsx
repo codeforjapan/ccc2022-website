@@ -1,19 +1,22 @@
-import { Center } from '@chakra-ui/react'
-
-import AppButtonRounded from '@/components/AppButtonRounded'
+import { Button, Center } from '@chakra-ui/react'
 
 const IndexLinkTo2022 = () => {
   return (
     <Center my={3}>
       {
-        <AppButtonRounded
-          fontSize={{ base: '0.9rem', sm: '1.2rem' }}
-          href="https://forms.gle/QP8rxGyj5ckxZffdA"
-          isExternal
-          mr={1}
+        <Button
+          rounded={100}
+          disabled
+          px={8}
+          py={6}
+          _disabled={{
+            opacity: 1,
+            cursor: 'default'
+          }}
+          _hover={{}}
         >
-          エントリーはコチラ！
-        </AppButtonRounded>
+          エントリーは終了しました
+        </Button>
       }
     </Center>
   )
