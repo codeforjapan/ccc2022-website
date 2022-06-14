@@ -28,7 +28,7 @@ const IndexPersonalSponsors = (props: Props) => {
         {/* <NotionRenderer blockMap={props.pageData} /> */}
         <Center mb={3}>
           <AppButtonRounded
-            href="https://docs.google.com/forms/d/e/1FAIpQLScjicJDZltfvyksLvvY9tq0NpoqN8BDqlcGuXXZrCHIY3hxDA/viewform?usp=sf_link"
+            href="https://forms.gle/X3dkijBqeZDRPiHr8"
             isOutlined
             isExternal
           >

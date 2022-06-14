@@ -13,7 +13,9 @@ import IndexHeroView from '@/components/IndexHeroView'
 import IndexLinkToPast from '@/components/IndexLinkToPast'
 import IndexNewsList, { NewsItem } from '@/components/IndexNewsList'
 import IndexOrganizer from '@/components/IndexOrganizer'
-// import IndexPersonalSponsors from '@/components/IndexPersonalSponsors'
+import IndexPersonalSponsors, {
+  PersonalSponsor
+} from '@/components/IndexPersonalSponsors'
 import IndexSchedule from '@/components/IndexSchedule'
 import IndexSpecialSponsors from '@/components/IndexSpecialSponsors'
 import IndexSponsors from '@/components/IndexSponsors'
@@ -41,6 +43,8 @@ const IndexPage: NextPage = (/* { contents, fallbackEnabled }: Props */) => {
     }
   ]
 
+  const sponsors: PersonalSponsor[] = []
+
   return (
     <Box className={styles.Index}>
       <Head>
@@ -60,7 +64,7 @@ const IndexPage: NextPage = (/* { contents, fallbackEnabled }: Props */) => {
       <IndexSpecialSponsors showComingSoon />
       <IndexSponsors showComingSoon showAndMore={false} />
       <IndexCollaborators showComingSoon showAndMore={false} />
-      {/* <IndexPersonalSponsors /> */}
+      <IndexPersonalSponsors sponsors={sponsors} />
       <IndexOrganizer />
       <IndexLinkTo2022 />
       <AppInquiry />
