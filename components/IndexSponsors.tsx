@@ -35,7 +35,7 @@ const IndexSponsors = (props: Props) => {
               image="/sponsors/salesforce.svg"
               alt="Salesforce"
             />
-            <SponsorLogo image="/sponsors/yahoo.svg" alt="Yahoo" />
+            <SponsorLogo href="#" image="/sponsors/yahoo.svg" alt="Yahoo" />
           </Flex>
         )}
 

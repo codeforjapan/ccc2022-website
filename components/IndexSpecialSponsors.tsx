@@ -17,7 +17,7 @@ const IndexSpecialSponsors = (props: Props) => {
           <AppComingSoon />
         ) : (
           <Flex direction="row" flexWrap="wrap" justifyContent="space-evenly">
-            <SponsorLogo image="/sponsors/aws.png" alt="AWS" larger />
+            <SponsorLogo href="#" image="/sponsors/aws.png" alt="AWS" larger />
             <SponsorLogo
               href="https://www.creatures.co.jp/"
               image="/sponsors/creatures.svg"
