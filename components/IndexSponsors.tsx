@@ -20,11 +20,6 @@ const IndexSponsors = (props: Props) => {
           <AppComingSoon />
         ) : (
           <Flex direction="row" flexWrap="wrap" justifyContent="space-evenly">
-            {/* <SponsorLogo
-              href="https://www.google.co.jp/"
-              image="/ccc-logo.svg"
-              alt="TIS"
-            /> */}
             <SponsorLogo
               href="https://udtalk.jp/"
               image="/sponsors/ud-talk.svg"
@@ -35,7 +30,12 @@ const IndexSponsors = (props: Props) => {
               image="/sponsors/salesforce.svg"
               alt="Salesforce"
             />
-            <SponsorLogo href="#" image="/sponsors/yahoo.svg" alt="Yahoo" />
+            <SponsorLogoSalesforce
+              href="https://www.google.co.jp/"
+              image="/sponsors/tis.svg"
+              alt="TIS"
+            />
+            {/* <SponsorLogo href="#" image="/sponsors/yahoo.svg" alt="Yahoo" /> */}
           </Flex>
         )}
 

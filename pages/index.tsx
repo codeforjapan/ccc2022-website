@@ -63,7 +63,7 @@ const IndexPage: NextPage = (/* { contents, fallbackEnabled }: Props */) => {
       <IndexSchedule />
       <IndexSpecialSponsors showComingSoon={false} />
       <IndexSponsors showComingSoon={false} showAndMore={false} />
-      <IndexCollaborators showComingSoon showAndMore={false} />
+      <IndexCollaborators showComingSoon={false} showAndMore={false} />
       <IndexPersonalSponsors sponsors={sponsors} />
       <IndexOrganizer />
       <IndexLinkTo2022 />
