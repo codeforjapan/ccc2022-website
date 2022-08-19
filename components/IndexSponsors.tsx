@@ -30,12 +30,12 @@ const IndexSponsors = (props: Props) => {
               image="/sponsors/salesforce.svg"
               alt="Salesforce"
             />
+            <SponsorLogo href="#" image="/sponsors/yahoo.svg" alt="Yahoo" />
             <SponsorLogoSalesforce
               href="https://www.google.co.jp/"
               image="/sponsors/tis.svg"
               alt="TIS"
             />
-            {/* <SponsorLogo href="#" image="/sponsors/yahoo.svg" alt="Yahoo" /> */}
           </Flex>
         )}
 
