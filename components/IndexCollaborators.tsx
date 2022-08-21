@@ -3,7 +3,8 @@ import { Box, Container, Flex } from '@chakra-ui/react'
 import AppSectionTitle from '@/components/AppSectionTitle'
 import AppComingSoon from '@/components/AppComingSoon'
 import AppAndMore from '@/components/AppAndMore'
-// import SponsorLogo from '@/components/SponsorLogo'
+import SponsorLogo from '@/components/SponsorLogo'
+import SponsorLogoSalesforce from '@/components/SponsorLogoSalesforce'
 
 interface Props {
   showComingSoon: boolean
@@ -19,7 +20,16 @@ const IndexCollaborators = (props: Props) => {
           <AppComingSoon />
         ) : (
           <Flex direction="row" flexWrap="wrap" justifyContent="space-evenly">
-            {/* Insert <SponsorLogo /> here */}
+            <SponsorLogo
+              href="https://waffle-waffle.org/"
+              image="/collaborators/waffle.png"
+              alt="Waffle"
+            />
+            <SponsorLogoSalesforce
+              href="https://microbit.org/ja/"
+              image="/collaborators/micro-bit.svg"
+              alt="Waffle"
+            />
           </Flex>
         )}
 
