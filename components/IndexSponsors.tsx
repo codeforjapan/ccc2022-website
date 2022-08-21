@@ -31,7 +31,7 @@ const IndexSponsors = (props: Props) => {
               alt="Salesforce"
             />
             <SponsorLogoSalesforce
-              href="https://www.google.co.jp/"
+              href="https://www.tis.co.jp/"
               image="/sponsors/tis.svg"
               alt="TIS"
             />
