@@ -28,7 +28,12 @@ const IndexCollaborators = (props: Props) => {
             <SponsorLogoSalesforce
               href="https://microbit.org/ja/"
               image="/collaborators/micro-bit.svg"
-              alt="Waffle"
+              alt="micro:bit"
+            />
+            <SponsorLogoSalesforce
+              href="https://jphacks.com/"
+              image="/collaborators/jphacks.png"
+              alt="JP Hacks"
             />
           </Flex>
         )}
