@@ -23,24 +23,48 @@ import AppFooter from '@/components/AppFooter'
 import AppInquiry from '@/components/AppInquiry'
 import AppShare from '@/components/AppShare'
 import IndexLinkTo2022 from '@/components/AppButtonApplicationForm'
+import IndexFinalists from '@/components/IndexFinalists'
 
 const IndexPage: NextPage = (/* { contents, fallbackEnabled }: Props */) => {
   const pageTitle = 'Civictech Challenge Cup 2022'
 
   const newsItems: NewsItem[] = [
     {
-      date: '2022/04/23',
-      title: 'Civictech Challenge Cup U-22 開会式が6月4日（土）に開催決定！',
+      date: '2022/09/09',
+      title: '最終審査会が開催決定！',
       summary:
-        '2022年6月4日（土）、エントリーした方全員に向けた開会式を開催します。 エントリーされた方は日程のご確認をお願いします。・時間：10:00 - 14:00（お昼休憩あり） ・場所：オンライン',
+        '2022年9月17日（土）に最終審査会を開催します。150名の参加者から選出された8チームのファイナリストがプレゼンを行います。\n ・時間 : 14:00 - 17:15',
       thumbnail: {
         name: '',
         url: '',
         rawUrl: ''
       },
-      link: '',
+      link: 'https://cccu22-final-2022.peatix.com/view',
+      isDraft: false
+    },
+    {
+      date: '2022/04/23',
+      title: '開会式が開催決定！',
+      summary:
+        '2022年6月4日（土）、エントリーした方全員に向けた開会式を開催します。 エントリーされた方は日程のご確認をお願いします。\n・時間 : 10:00 - 14:00\n',
+      thumbnail: {
+        name: '',
+        url: '',
+        rawUrl: ''
+      },
+      link: 'https://www.youtube.com/watch?v=a-f84k8SfeY',
       isDraft: false
     }
+  ]
+
+  const finalists = [
+    'Bibliotech',
+    'Scholactive',
+    'be♭',
+    'Idea×Tech',
+    'dp9',
+    '非日常',
+    'Coco makers'
   ]
 
   const sponsors: PersonalSponsor[] = []
@@ -56,6 +80,7 @@ const IndexPage: NextPage = (/* { contents, fallbackEnabled }: Props */) => {
       <AppShare />
       <IndexLinkTo2022 />
       <IndexLinkToPast />
+      <IndexFinalists finalists={finalists} />
       <IndexNewsList newsItems={newsItems} />
       <IndexExaminationCriteria />
       <IndexAwards />
