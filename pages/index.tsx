@@ -67,7 +67,12 @@ const IndexPage: NextPage = (/* { contents, fallbackEnabled }: Props */) => {
     'Coco makers'
   ]
 
-  const sponsors: PersonalSponsor[] = []
+  const sponsors: PersonalSponsor[] = [
+    {
+      name: '矢野敏樹',
+      isHidden: false
+    }
+  ]
 
   return (
     <Box className={styles.Index}>
