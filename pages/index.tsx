@@ -71,6 +71,14 @@ const IndexPage: NextPage = (/* { contents, fallbackEnabled }: Props */) => {
     {
       name: '矢野敏樹',
       isHidden: false
+    },
+    {
+      name: '田中瑞人',
+      isHidden: false
+    },
+    {
+      name: '前川弘樹',
+      isHidden: false
     }
   ]
 
