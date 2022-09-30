@@ -14,18 +14,27 @@ type Props = {
 
 const IndexAwards = (props: Props) => {
   return (
-    <Container maxW="container.xl" pt={8} pb={2}>
+    <Container maxW="container.xl" pt={10} pb={10}>
       <Box as={'section'} className={styles.FinalWinners}>
         <AppSectionTitle
           enTitle="Final Review Result!"
-          jaTitle="受賞者の皆さま、おめでとうございました！！"
+          jaTitle="受賞者一覧"
           textAlign="center"
         />
-        <Flex>
+        <Flex wrap="wrap" justify="center">
           {props.winners.map((winner, index) => (
-            <Box key={index} pt={4} textAlign="center">
-              <Text>{winner.title}</Text>
-              <Text>{winner.team}</Text>
+            <Box
+              flexBasis="33.3%"
+              key={index}
+              p={5}
+              textAlign="center"
+              minW="250px"
+              flex
+            >
+              <Text fontSize="1xl" whiteSpace="nowrap" margin="0 auto">
+                {winner.title}
+              </Text>
+              <Text fontSize="2xl">{winner.team}</Text>
             </Box>
           ))}
         </Flex>
