@@ -3,11 +3,11 @@ import type { NextPage } from 'next'
 import { Box } from '@chakra-ui/react'
 import styles from '@/styles/index.module.scss'
 
-import IndexAwards from '@/components/IndexAwards'
+// import IndexAwards from '@/components/IndexAwards'
 import IndexCollaborators from '@/components/IndexCollaborators'
 import IndexExaminationCriteria from '@/components/IndexExaminationCriteria'
-// import FinalReviewVideo from '@/components/IndexFinalReviewVideo'
-// import FinalWinners from '@/components/IndexFinalWinners'
+import IndexFinalReviewVideo from '@/components/IndexFinalReviewVideo'
+import IndexFinalWinners, { Winner } from '@/components/IndexFinalWinners'
 import IndexGuidelines from '@/components/IndexGuidelines'
 import IndexHeroView from '@/components/IndexHeroView'
 import IndexLinkToPast from '@/components/IndexLinkToPast'
@@ -27,6 +27,41 @@ import IndexFinalists from '@/components/IndexFinalists'
 
 const IndexPage: NextPage = (/* { contents, fallbackEnabled }: Props */) => {
   const pageTitle = 'Civictech Challenge Cup 2022'
+
+  const winners: Winner[] = [
+    {
+      title: '大賞',
+      team: 'dp9'
+    },
+    {
+      title: 'AWS賞',
+      team: 'Coco makers'
+    },
+    {
+      title: 'Creatures賞',
+      team: 'Idea×Tech'
+    },
+    {
+      title: 'Salesforce賞',
+      team: 'Coco makers'
+    },
+    {
+      title: 'Yahoo! JAPAN賞',
+      team: 'be♭'
+    },
+    {
+      title: 'TIS賞',
+      team: 'たのみ〜る'
+    },
+    {
+      title: 'Code for Japan賞',
+      team: 'Scholactive'
+    },
+    {
+      title: 'オーディエンス賞',
+      team: '非日常'
+    }
+  ]
 
   const newsItems: NewsItem[] = [
     {
@@ -71,6 +106,14 @@ const IndexPage: NextPage = (/* { contents, fallbackEnabled }: Props */) => {
     {
       name: '矢野敏樹',
       isHidden: false
+    },
+    {
+      name: '田中瑞人',
+      isHidden: false
+    },
+    {
+      name: '前川弘樹',
+      isHidden: false
     }
   ]
 
@@ -84,11 +127,13 @@ const IndexPage: NextPage = (/* { contents, fallbackEnabled }: Props */) => {
       <IndexHeroView showApplicationButton={true} />
       <AppShare />
       <IndexLinkTo2022 />
+      <IndexFinalWinners winners={winners} />
+      <IndexFinalReviewVideo />
       <IndexLinkToPast />
       <IndexFinalists finalists={finalists} />
       <IndexNewsList newsItems={newsItems} />
       <IndexExaminationCriteria />
-      <IndexAwards />
+      {/* <IndexAwards /> */}
       <IndexGuidelines />
       <IndexSchedule />
       <IndexSpecialSponsors showComingSoon={false} />
