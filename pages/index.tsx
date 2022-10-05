@@ -23,7 +23,6 @@ import AppFooter from '@/components/AppFooter'
 import AppInquiry from '@/components/AppInquiry'
 import AppShare from '@/components/AppShare'
 import IndexLinkTo2022 from '@/components/AppButtonApplicationForm'
-import IndexFinalists from '@/components/IndexFinalists'
 
 const IndexPage: NextPage = (/* { contents, fallbackEnabled }: Props */) => {
   const pageTitle = 'Civictech Challenge Cup 2022'
@@ -92,15 +91,15 @@ const IndexPage: NextPage = (/* { contents, fallbackEnabled }: Props */) => {
     }
   ]
 
-  const finalists = [
-    'Bibliotech',
-    'Scholactive',
-    'be♭',
-    'Idea×Tech',
-    'dp9',
-    '非日常',
-    'Coco makers'
-  ]
+  // const finalists = [
+  //   'Bibliotech',
+  //   'Scholactive',
+  //   'be♭',
+  //   'Idea×Tech',
+  //   'dp9',
+  //   '非日常',
+  //   'Coco makers'
+  // ]
 
   const sponsors: PersonalSponsor[] = [
     {
@@ -130,7 +129,7 @@ const IndexPage: NextPage = (/* { contents, fallbackEnabled }: Props */) => {
       <IndexFinalWinners winners={winners} />
       <IndexFinalReviewVideo />
       <IndexLinkToPast />
-      <IndexFinalists finalists={finalists} />
+      {/* <IndexFinalists finalists={finalists} /> */}
       <IndexNewsList newsItems={newsItems} />
       <IndexExaminationCriteria />
       {/* <IndexAwards /> */}

@@ -29,7 +29,6 @@ const IndexAwards = (props: Props) => {
               p={5}
               textAlign="center"
               minW="250px"
-              flex
             >
               <Text fontSize="1xl" whiteSpace="nowrap" margin="0 auto">
                 {winner.title}
