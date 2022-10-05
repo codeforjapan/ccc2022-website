@@ -3,7 +3,6 @@ import type { NextPage } from 'next'
 import { Box } from '@chakra-ui/react'
 import styles from '@/styles/index.module.scss'
 
-// import IndexAwards from '@/components/IndexAwards'
 import IndexCollaborators from '@/components/IndexCollaborators'
 import IndexExaminationCriteria from '@/components/IndexExaminationCriteria'
 import IndexFinalReviewVideo from '@/components/IndexFinalReviewVideo'
@@ -91,16 +90,6 @@ const IndexPage: NextPage = (/* { contents, fallbackEnabled }: Props */) => {
     }
   ]
 
-  // const finalists = [
-  //   'Bibliotech',
-  //   'Scholactive',
-  //   'be♭',
-  //   'Idea×Tech',
-  //   'dp9',
-  //   '非日常',
-  //   'Coco makers'
-  // ]
-
   const sponsors: PersonalSponsor[] = [
     {
       name: '矢野敏樹',
@@ -129,10 +118,8 @@ const IndexPage: NextPage = (/* { contents, fallbackEnabled }: Props */) => {
       <IndexFinalWinners winners={winners} />
       <IndexFinalReviewVideo />
       <IndexLinkToPast />
-      {/* <IndexFinalists finalists={finalists} /> */}
       <IndexNewsList newsItems={newsItems} />
       <IndexExaminationCriteria />
-      {/* <IndexAwards /> */}
       <IndexGuidelines />
       <IndexSchedule />
       <IndexSpecialSponsors showComingSoon={false} />
