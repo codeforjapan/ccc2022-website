@@ -30,7 +30,7 @@ const IndexAwards = (props: Props) => {
               textAlign="center"
               minW="250px"
             >
-              <Text fontSize="1xl" className={styles.FinalWinnersAwardName}>
+              <Text fontSize="xl" className={styles.FinalWinnersAwardName}>
                 {winner.title}
               </Text>
               <Text fontSize="2xl">{winner.team}</Text>
