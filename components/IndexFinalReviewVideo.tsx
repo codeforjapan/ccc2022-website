@@ -1,5 +1,5 @@
 import { Box, Container } from '@chakra-ui/react'
-// import YouTube from 'react-youtube'
+import YouTube from 'react-youtube'
 
 import styles from '@/styles/FinalReviewVideo.module.scss'
 
@@ -14,12 +14,12 @@ const IndexAwards = () => {
         <Box textAlign="center" pb={2} fontSize="1.1rem">
           最終審査会の様子はこちらからご覧いただけます
         </Box>
-        {/* <YouTube
-          videoId="PB4Wg-y1JrI"
-          className={styles.FinalReviewVideoItem}
-          containerClassName={styles.FinalReviewVideoOuter}
+        <YouTube
+          videoId="Lh3CK4Jy8U8"
+          className={styles.FinalReviewVideoOuter}
+          iframeClassName={styles.FinalReviewVideoItem}
           opts={{ height: '', width: '' }}
-        /> */}
+        />
       </Box>
     </Container>
   )

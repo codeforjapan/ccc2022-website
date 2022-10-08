@@ -3,11 +3,12 @@ import { Box, Heading } from '@chakra-ui/react'
 interface Props {
   enTitle: string
   jaTitle?: string
+  textAlign?: 'left' | 'center' | 'right'
 }
 
 const AppSectionTitle = (props: Props) => {
   return (
-    <Box textAlign="left">
+    <Box textAlign={props.textAlign || 'left'}>
       <Heading
         color={'brand.indigo'}
         fontFamily={'brand.enTitle'}
